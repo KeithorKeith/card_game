@@ -6,7 +6,7 @@
 
 class CardGame
 
-#checkforace needs to change to check_for_ace. Snake case is the ruby convention.
+#checkforace needs to change to check_for_ace. Snake case is the ruby convention. Also ace has a capital A. Found this out during testing.
   def checkforAce(card)
   #card.value = 1 needs to be == 1
     if card.value = 1
@@ -28,10 +28,11 @@ end
 end
 
 def self.cards_total(cards)
-#pointless total here, erase.
+#pointless total here, it needs a value.
   total
   for card in cards
     total += card.value
+  #the return should be after the end below but before the last end.
     return "You have a total of" + total
   end
 end
